@@ -256,12 +256,12 @@ paket-files/
 .idea/
 *.sln.iml
 pub/
-/src/Web/WebMVC/Properties/PublishProfiles/eShopOnContainersWebMVC2016 - Web Deploy-publish.ps1
+/src/Web/WebMVC/Properties/PublishProfiles/CarRentalHubWebMVC2016 - Web Deploy-publish.ps1
 /src/Web/WebMVC/Properties/PublishProfiles/publish-module.psm1
-/src/Services/Identity/eShopOnContainers.Identity/Properties/launchSettings.json
+/src/Services/Identity/CarRentalHub.Identity/Properties/launchSettings.json
 
 #Ignore marker-file used to know which docker files we have.
-.eshopdocker_*
+.carrentalhubdocker_*
 
 # CodeRush
 .cr/
@@ -453,7 +453,7 @@ typings/
 # End of https://www.gitignore.io/api/git,macos,gitbook,windows,notepadpp,jetbrains,tortoisegit,visualstudio,visualstudiocode
 _build/
 _site/
-Properties/
+#Properties/
 src/Web/wwwroot/lib/
 Project_Readme.html
 *.vscode/
@@ -472,7 +472,7 @@ bower_components/
 # visual studio here
 # Benchmark Results
 BenchmarkDotNet.Artifacts/
-**/Properties/launchSettings.json
+#**/Properties/launchSettings.json
 
 # Visual Studio Trace Files
 *.e2e
