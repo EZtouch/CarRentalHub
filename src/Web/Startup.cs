@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
@@ -12,8 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using EZtouch.CarRentalHub.Data;
 using EZtouch.CarRentalHub.Models;
 using EZtouch.CarRentalHub.Services;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 
 namespace EZtouch.CarRentalHub
 {
