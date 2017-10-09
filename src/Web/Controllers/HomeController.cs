@@ -29,5 +29,12 @@ namespace EZtouch.CarRentalHub.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [Route("CarCalculations/{x:range(1,12)?}/{y:range(1,12)?}")]
+        [Route("Home/Calc/{x?}/{y?}")]
+        public IActionResult Calc(int x = 1, int y = 2)
+        {
+            return Content($"{x * y}");
+        }
     }
 }
