@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
+
 namespace EZtouch.CarRentalHub.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(AppIdentityDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {
@@ -126,7 +128,7 @@ namespace EZtouch.CarRentalHub.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("CarRentalHub.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Infrastructure.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id");
 
@@ -185,7 +187,7 @@ namespace EZtouch.CarRentalHub.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("CarRentalHub.Models.ApplicationUser")
+                    b.HasOne("Infrastructure.Identity.ApplicationUser")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -193,7 +195,7 @@ namespace EZtouch.CarRentalHub.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("CarRentalHub.Models.ApplicationUser")
+                    b.HasOne("Infrastructure.Identity.ApplicationUser")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -206,7 +208,7 @@ namespace EZtouch.CarRentalHub.Data.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("CarRentalHub.Models.ApplicationUser")
+                    b.HasOne("Infrastructure.Identity.ApplicationUser")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

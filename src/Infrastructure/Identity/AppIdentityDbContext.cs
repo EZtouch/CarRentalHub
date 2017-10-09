@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using EZtouch.CarRentalHub.Models;
 
-namespace EZtouch.CarRentalHub.Data
+namespace Infrastructure.Identity
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class AppIdentityDbContext : IdentityDbContext<ApplicationUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public AppIdentityDbContext(DbContextOptions<AppIdentityDbContext> options)
             : base(options)
         {
         }

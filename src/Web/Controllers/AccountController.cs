@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using EZtouch.CarRentalHub.Models;
 using EZtouch.CarRentalHub.Models.AccountViewModels;
 using EZtouch.CarRentalHub.Services;
+using Infrastructure.Identity;
 
 namespace EZtouch.CarRentalHub.Controllers
 {

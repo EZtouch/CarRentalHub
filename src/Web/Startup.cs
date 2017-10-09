@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using EZtouch.CarRentalHub.Data;
 using EZtouch.CarRentalHub.Models;
 using EZtouch.CarRentalHub.Services;
-using Web;
+using Infrastructure.Identity;
 
 namespace EZtouch.CarRentalHub
 {
@@ -23,11 +23,11 @@ namespace EZtouch.CarRentalHub
         // This method gets called by the runtime. Use this method to add services to the container. 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<AppIdentityDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
             // Add application services.
