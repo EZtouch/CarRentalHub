@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using EZtouch.CarRentalHub.Data;
 using EZtouch.CarRentalHub.Models;
 using EZtouch.CarRentalHub.Services;
+using Web;
 
 namespace EZtouch.CarRentalHub
 {
@@ -23,7 +24,7 @@ namespace EZtouch.CarRentalHub
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -34,9 +35,7 @@ namespace EZtouch.CarRentalHub
 
             services.AddMvc();
 
-            var connection = @"Server=(localdb)\mssqllocaldb;Database=RentalDB;Trusted_Connection=True;";
-            services.AddDbContext<RentalDBContext>(options => options.UseSqlServer(connection));
-
+            services.AddDbContext<RentalDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("RentalConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
