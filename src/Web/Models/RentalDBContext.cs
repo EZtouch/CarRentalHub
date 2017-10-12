@@ -42,7 +42,7 @@ namespace EZtouch.CarRentalHub.Models
                     .HasName("UQ_Availability_Description")
                     .IsUnique();
 
-                entity.Property(e => e.AvailabilityId).ValueGeneratedNever();
+                entity.Property(e => e.AvailabilityId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description)
                     .IsRequired()
@@ -58,8 +58,6 @@ namespace EZtouch.CarRentalHub.Models
                 entity.HasIndex(e => e.RegPlateNo)
                     .HasName("UQ_Car_RegPlateNo")
                     .IsUnique();
-
-                entity.Property(e => e.CarId).ValueGeneratedNever();
 
                 entity.Property(e => e.RegPlateNo)
                     .IsRequired()
@@ -102,9 +100,13 @@ namespace EZtouch.CarRentalHub.Models
                     .HasName("UQ_Class_Name")
                     .IsUnique();
 
-                entity.Property(e => e.ClassId).ValueGeneratedNever();
+                entity.Property(e => e.ClassId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description).HasMaxLength(50);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(255);
             });
 
             modelBuilder.Entity<Color>(entity =>
@@ -120,8 +122,6 @@ namespace EZtouch.CarRentalHub.Models
                 entity.HasIndex(e => e.Name)
                     .HasName("UQ_Color_Name")
                     .IsUnique();
-
-                entity.Property(e => e.ColorId).ValueGeneratedNever();
 
                 entity.Property(e => e.Code)
                     .IsRequired()
@@ -142,8 +142,6 @@ namespace EZtouch.CarRentalHub.Models
                     .HasName("UQ_Make_Name")
                     .IsUnique();
 
-                entity.Property(e => e.MakeId).ValueGeneratedNever();
-
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(50);
@@ -158,8 +156,6 @@ namespace EZtouch.CarRentalHub.Models
                 entity.HasIndex(e => e.Name)
                     .HasName("UQ_Model_Name")
                     .IsUnique();
-
-                entity.Property(e => e.ModelId).ValueGeneratedNever();
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -183,8 +179,6 @@ namespace EZtouch.CarRentalHub.Models
                 entity.HasIndex(e => e.RentalId)
                     .HasName("UQ_Rental_RentalId")
                     .IsUnique();
-
-                entity.Property(e => e.RentalId).ValueGeneratedNever();
 
                 entity.Property(e => e.ExpectedReturnDate).HasColumnType("datetime");
 
@@ -221,7 +215,7 @@ namespace EZtouch.CarRentalHub.Models
                     .HasName("UQ_Transmission_Type")
                     .IsUnique();
 
-                entity.Property(e => e.TransmissionId).ValueGeneratedNever();
+                entity.Property(e => e.TransmissionId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description).HasMaxLength(255);
 
@@ -243,8 +237,6 @@ namespace EZtouch.CarRentalHub.Models
                 entity.HasIndex(e => e.UserId)
                     .HasName("UQ_User_UserId")
                     .IsUnique();
-
-                entity.Property(e => e.UserId).ValueGeneratedNever();
 
                 entity.Property(e => e.Dob)
                     .HasColumnName("DOB")
@@ -285,7 +277,7 @@ namespace EZtouch.CarRentalHub.Models
                     .HasName("UQ_UserRole_RoleId")
                     .IsUnique();
 
-                entity.Property(e => e.RoleId).ValueGeneratedNever();
+                entity.Property(e => e.RoleId).ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description).HasMaxLength(255);
 

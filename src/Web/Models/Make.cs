@@ -10,7 +10,7 @@ namespace EZtouch.CarRentalHub.Models
             Model = new HashSet<Model>();
         }
 
-        public Guid MakeId { get; set; }
+        public short MakeId { get; set; }
         public string Name { get; set; }
 
         public ICollection<Model> Model { get; set; }

@@ -10,7 +10,7 @@ namespace EZtouch.CarRentalHub.Models
             User = new HashSet<User>();
         }
 
-        public Guid RoleId { get; set; }
+        public byte RoleId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 

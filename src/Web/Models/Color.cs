@@ -10,7 +10,7 @@ namespace EZtouch.CarRentalHub.Models
             Car = new HashSet<Car>();
         }
 
-        public Guid ColorId { get; set; }
+        public short ColorId { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
 

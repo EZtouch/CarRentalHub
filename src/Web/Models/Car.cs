@@ -10,11 +10,11 @@ namespace EZtouch.CarRentalHub.Models
             Rental = new HashSet<Rental>();
         }
 
-        public Guid CarId { get; set; }
-        public Guid AvailabilityId { get; set; }
-        public Guid ModelId { get; set; }
-        public Guid ColorId { get; set; }
-        public Guid ClassId { get; set; }
+        public int CarId { get; set; }
+        public byte AvailabilityId { get; set; }
+        public short ModelId { get; set; }
+        public short ColorId { get; set; }
+        public byte ClassId { get; set; }
         public double? Mileage { get; set; }
         public string RegPlateNo { get; set; }
         public DateTime YearManufactured { get; set; }

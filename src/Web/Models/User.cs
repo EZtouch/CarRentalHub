@@ -11,14 +11,14 @@ namespace EZtouch.CarRentalHub.Models
             RentalUser = new HashSet<Rental>();
         }
 
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string Name { get; set; }
         public DateTime Dob { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string Phone { get; set; }
-        public Guid RoleId { get; set; }
-        public Guid NationalityId { get; set; }
+        public byte RoleId { get; set; }
+        public short NationalityId { get; set; }
 
         public UserRole Role { get; set; }
         public ICollection<Rental> RentalEmployee { get; set; }
