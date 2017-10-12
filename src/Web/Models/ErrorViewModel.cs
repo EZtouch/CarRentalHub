@@ -1,4 +1,4 @@
-namespace EZtouch.CarRentalHub.Models
+namespace Web.Models
 {
     public class ErrorViewModel
     {

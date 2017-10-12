@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EZtouch.CarRentalHub.Models.AccountViewModels
+namespace Web.Models.AccountViewModels
 {
     public class LoginWith2faViewModel
     {

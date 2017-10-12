@@ -6,11 +6,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using EZtouch.CarRentalHub.Models.AccountViewModels;
-using EZtouch.CarRentalHub.Services;
+using Web.Models.AccountViewModels;
+using Web.Services;
 using Infrastructure.Identity;
+using Web.Extensions;
 
-namespace EZtouch.CarRentalHub.Controllers
+namespace Web.Controllers
 {
     [Authorize]
     [Route("[controller]/[action]")]

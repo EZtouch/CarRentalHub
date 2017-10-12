@@ -1,7 +1,7 @@
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
-namespace EZtouch.CarRentalHub.Services
+namespace Web.Services
 {
     public static class EmailSenderExtensions
     {

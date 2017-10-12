@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace EZtouch.CarRentalHub.Models.ManageViewModels
+namespace Web.Models.ManageViewModels
 {
     public class EnableAuthenticatorViewModel
     {

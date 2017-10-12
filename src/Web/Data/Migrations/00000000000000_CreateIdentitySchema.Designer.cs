@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 
-namespace EZtouch.CarRentalHub.Data.Migrations
+namespace Web.Data.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]

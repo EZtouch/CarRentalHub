@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EZtouch.CarRentalHub.Models
+namespace Web.Models
 {
     public partial class UserRole
     {

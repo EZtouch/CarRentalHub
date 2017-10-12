@@ -1,4 +1,4 @@
-﻿namespace EZtouch.CarRentalHub.Models.ManageViewModels
+﻿namespace Web.Models.ManageViewModels
 {
     public class TwoFactorAuthenticationViewModel
     {

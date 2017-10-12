@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace EZtouch.CarRentalHub.Models
+namespace Web.Models
 {
     public partial class RentalDBContext : DbContext
     {

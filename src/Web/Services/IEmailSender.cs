@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace EZtouch.CarRentalHub.Services
+namespace Web.Services
 {
     public interface IEmailSender
     {

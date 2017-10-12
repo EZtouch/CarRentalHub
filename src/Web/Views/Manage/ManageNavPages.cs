@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
-namespace EZtouch.CarRentalHub.Views.Manage
+namespace Web.Views.Manage
 {
     public static class ManageNavPages
     {

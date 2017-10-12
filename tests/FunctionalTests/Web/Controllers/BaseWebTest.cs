@@ -3,7 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Reflection;
 using Microsoft.Extensions.PlatformAbstractions;
-using EZtouch.CarRentalHub;
+using Web;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace EZtouch.CarRentalHub.Models.ManageViewModels
+namespace Web.Models.ManageViewModels
 {
     public class ExternalLoginsViewModel
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore;
 
-namespace EZtouch.CarRentalHub
+namespace Web
 {
     public class Program
     {

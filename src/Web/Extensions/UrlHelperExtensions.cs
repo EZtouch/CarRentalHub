@@ -1,4 +1,4 @@
-using EZtouch.CarRentalHub.Controllers;
+using Web.Controllers;
 
 namespace Microsoft.AspNetCore.Mvc
 {
