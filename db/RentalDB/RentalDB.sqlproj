@@ -212,4 +212,7 @@
   <ItemGroup>
     <None Include="Migrations\0001_20171011-2245_S.-Hashem.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\0002_20171012-1508_S.-Hashem.sql" />
+  </ItemGroup>
 </Project>
