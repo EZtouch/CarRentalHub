@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Web.Models.ManageViewModels;
 using Web.Services;
-using Web.Extensions;
 using Infrastructure.Identity;
 
 namespace Web.Controllers

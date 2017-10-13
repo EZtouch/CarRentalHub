@@ -9,7 +9,6 @@ using Microsoft.Extensions.Logging;
 using Web.Models.AccountViewModels;
 using Web.Services;
 using Infrastructure.Identity;
-using Web.Extensions;
 
 namespace Web.Controllers
 {
