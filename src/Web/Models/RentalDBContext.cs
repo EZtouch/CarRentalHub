@@ -6,16 +6,16 @@ namespace Web.Models
 {
     public partial class RentalDBContext : DbContext
     {
-        public virtual DbSet<Availability> Availability { get; set; }
-        public virtual DbSet<Car> Car { get; set; }
-        public virtual DbSet<Class> Class { get; set; }
-        public virtual DbSet<Color> Color { get; set; }
-        public virtual DbSet<Make> Make { get; set; }
-        public virtual DbSet<Model> Model { get; set; }
-        public virtual DbSet<Rental> Rental { get; set; }
-        public virtual DbSet<Transmission> Transmission { get; set; }
-        public virtual DbSet<User> User { get; set; }
-        public virtual DbSet<UserRole> UserRole { get; set; }
+        public virtual DbSet<Availability> Availabilities { get; set; }
+        public virtual DbSet<Car> Cars { get; set; }
+        public virtual DbSet<Class> Classes { get; set; }
+        public virtual DbSet<Color> Colors { get; set; }
+        public virtual DbSet<Make> Makes { get; set; }
+        public virtual DbSet<Model> Models { get; set; }
+        public virtual DbSet<Rental> Rentals { get; set; }
+        public virtual DbSet<Transmission> Transmissions { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UserRole> UserRoles { get; set; }
 
         public RentalDBContext(DbContextOptions<RentalDBContext> options)
             : base(options)

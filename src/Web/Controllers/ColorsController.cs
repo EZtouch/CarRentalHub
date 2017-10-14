@@ -21,7 +21,7 @@ namespace Web.Controllers
         // GET: Colors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Color.ToListAsync());
+            return View(await _context.Colors.ToListAsync());
         }
 
         // GET: Colors/Details/5
@@ -32,7 +32,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color
+            var color = await _context.Colors
                 .SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
@@ -72,7 +72,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color.SingleOrDefaultAsync(m => m.ColorId == id);
+            var color = await _context.Colors.SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
                 return NotFound();
@@ -123,7 +123,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color
+            var color = await _context.Colors
                 .SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
@@ -138,15 +138,15 @@ namespace Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(short id)
         {
-            var color = await _context.Color.SingleOrDefaultAsync(m => m.ColorId == id);
-            _context.Color.Remove(color);
+            var color = await _context.Colors.SingleOrDefaultAsync(m => m.ColorId == id);
+            _context.Colors.Remove(color);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ColorExists(short id)
         {
-            return _context.Color.Any(e => e.ColorId == id);
+            return _context.Colors.Any(e => e.ColorId == id);
         }
     }
 }
