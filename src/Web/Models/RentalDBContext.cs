@@ -42,7 +42,8 @@ namespace Web.Models
                     .HasName("UQ_Availability_Description")
                     .IsUnique();
 
-                entity.Property(e => e.AvailabilityId).ValueGeneratedOnAdd();
+                entity.Property(e => e.AvailabilityId)
+                    .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description)
                     .IsRequired()
@@ -63,7 +64,8 @@ namespace Web.Models
                     .IsRequired()
                     .HasMaxLength(12);
 
-                entity.Property(e => e.YearManufactured).HasColumnType("date");
+                entity.Property(e => e.YearManufactured)
+                    .HasColumnType("date");
 
                 entity.HasOne(d => d.Availability)
                     .WithMany(p => p.Car)
@@ -100,9 +102,11 @@ namespace Web.Models
                     .HasName("UQ_Class_Name")
                     .IsUnique();
 
-                entity.Property(e => e.ClassId).ValueGeneratedOnAdd();
+                entity.Property(e => e.ClassId)
+                    .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Description).HasMaxLength(50);
+                entity.Property(e => e.Description)
+                    .HasMaxLength(50);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -180,11 +184,14 @@ namespace Web.Models
                     .HasName("UQ_Rental_RentalId")
                     .IsUnique();
 
-                entity.Property(e => e.ExpectedReturnDate).HasColumnType("datetime");
+                entity.Property(e => e.ExpectedReturnDate)
+                    .HasColumnType("datetime");
 
-                entity.Property(e => e.RentDate).HasColumnType("datetime");
+                entity.Property(e => e.RentDate)
+                    .HasColumnType("datetime");
 
-                entity.Property(e => e.ReturnDate).HasColumnType("datetime");
+                entity.Property(e => e.ReturnDate)
+                    .HasColumnType("datetime");
 
                 entity.HasOne(d => d.Car)
                     .WithMany(p => p.Rental)
@@ -215,9 +222,11 @@ namespace Web.Models
                     .HasName("UQ_Transmission_Type")
                     .IsUnique();
 
-                entity.Property(e => e.TransmissionId).ValueGeneratedOnAdd();
+                entity.Property(e => e.TransmissionId)
+                    .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Description).HasMaxLength(255);
+                entity.Property(e => e.Description)
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.Type)
                     .IsRequired()
@@ -244,7 +253,8 @@ namespace Web.Models
 
                 entity.Property(e => e.Email)
                     .IsRequired()
-                    .HasMaxLength(75);
+                    .HasMaxLength(75)
+                    .HasAnnotation("DataType", DataType.EmailAddress);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -252,7 +262,8 @@ namespace Web.Models
 
                 entity.Property(e => e.Password)
                     .IsRequired()
-                    .HasMaxLength(24);
+                    .HasMaxLength(24)
+                    .HasAnnotation("DataType", DataType.Password);
 
                 entity.Property(e => e.Phone)
                     .IsRequired()
@@ -277,9 +288,11 @@ namespace Web.Models
                     .HasName("UQ_UserRole_RoleId")
                     .IsUnique();
 
-                entity.Property(e => e.RoleId).ValueGeneratedOnAdd();
+                entity.Property(e => e.RoleId)
+                    .ValueGeneratedOnAdd();
 
-                entity.Property(e => e.Description).HasMaxLength(255);
+                entity.Property(e => e.Description)
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
