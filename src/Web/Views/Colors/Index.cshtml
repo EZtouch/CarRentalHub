@@ -18,7 +18,9 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Code)
                 </th>
-            <th></th>
+                <th>
+                
+                </th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +31,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Code)
+                <svg height="25" width="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="black" stroke-width="1" fill="@Html.DisplayFor(modelItem => item.Code)" />
+                </svg>
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ColorId">Edit</a> |

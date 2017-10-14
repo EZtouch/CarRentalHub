@@ -22,6 +22,9 @@
         </dt>
         <dd class="col-lg-3">
             @Html.DisplayFor(model => model.Code)
+            <svg height="25" width="25">
+                <circle cx="12.5" cy="12.5" r="10" stroke="black" stroke-width="1" fill="@Html.DisplayFor(modelItem => modelItem.Code)" />
+            </svg>
         </dd>
 </dl>
     
