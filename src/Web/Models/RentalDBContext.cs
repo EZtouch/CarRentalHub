@@ -3,37 +3,35 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Web.Models
 {
     public partial class RentalDBContext : DbContext
     {
-        public virtual DbSet<Availability> Availability { get; set; }
-        public virtual DbSet<Car> Car { get; set; }
-        public virtual DbSet<Class> Class { get; set; }
-        public virtual DbSet<Color> Color { get; set; }
-        public virtual DbSet<Make> Make { get; set; }
-        public virtual DbSet<Model> Model { get; set; }
-        public virtual DbSet<Rental> Rental { get; set; }
-        public virtual DbSet<Transmission> Transmission { get; set; }
-        public virtual DbSet<User> User { get; set; }
-        public virtual DbSet<UserRole> UserRole { get; set; }
+        public virtual DbSet<Availability> Availabilities { get; set; }
+        public virtual DbSet<Car> Cars { get; set; }
+        public virtual DbSet<Class> Classes { get; set; }
+        public virtual DbSet<Color> Colors { get; set; }
+        public virtual DbSet<Make> Makes { get; set; }
+        public virtual DbSet<Model> Models { get; set; }
+        public virtual DbSet<Rental> Rentals { get; set; }
+        public virtual DbSet<Transmission> Transmissions { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<UserRole> UserRoles { get; set; }
 
         public RentalDBContext(DbContextOptions<RentalDBContext> options)
             : base(options)
         { }
 
-        //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //        {
-        //            if (!optionsBuilder.IsConfigured)
-        //            {
-        //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-        //                optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=RentalDB;Trusted_Connection=True;");
-        //            }
-        //        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Map the table name with the entity model display name instead of dbset
+            foreach (var entity in modelBuilder.Model.GetEntityTypes())
+            {
+                entity.Relational().TableName = entity.DisplayName();
+            }
+
             modelBuilder.Entity<Availability>(entity =>
             {
                 entity.HasIndex(e => e.AvailabilityId)

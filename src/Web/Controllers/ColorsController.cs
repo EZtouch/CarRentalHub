@@ -18,19 +18,19 @@ namespace Web.Controllers
             _context = context;
         }
 
-        // GET: Color
+        // GET: Colors
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Color.ToListAsync());
+            return View(await _context.Colors.ToListAsync());
         }
 
-        // GET: Color/red
+        // GET: Colors/red
         public async Task<IActionResult> Filter(string id)
         {
-            return View("Index", await _context.Color.Where(color => color.Name.ToLower().Contains(id.ToLower())).ToListAsync());
+            return View("Index", await _context.Colors.Where(color => color.Name.ToLower().Contains(id.ToLower())).ToListAsync());
         }
 
-        // GET: Color/Details/5
+        // GET: Colors/Details/5
         public async Task<IActionResult> Details(short? id)
         {
             if (id == null)
@@ -38,7 +38,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color
+            var color = await _context.Colors
                 .SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
@@ -48,13 +48,13 @@ namespace Web.Controllers
             return View(color);
         }
 
-        // GET: Color/Create
+        // GET: Colors/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Color/Create
+        // POST: Colors/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -70,7 +70,7 @@ namespace Web.Controllers
             return View(color);
         }
 
-        // GET: Color/Edit/5
+        // GET: Colors/Edit/5
         public async Task<IActionResult> Edit(short? id)
         {
             if (id == null)
@@ -78,7 +78,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color.SingleOrDefaultAsync(m => m.ColorId == id);
+            var color = await _context.Colors.SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
                 return NotFound();
@@ -86,7 +86,7 @@ namespace Web.Controllers
             return View(color);
         }
 
-        // POST: Color/Edit/5
+        // POST: Colors/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -121,7 +121,7 @@ namespace Web.Controllers
             return View(color);
         }
 
-        // GET: Color/Delete/5
+        // GET: Colors/Delete/5
         public async Task<IActionResult> Delete(short? id)
         {
             if (id == null)
@@ -129,7 +129,7 @@ namespace Web.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color
+            var color = await _context.Colors
                 .SingleOrDefaultAsync(m => m.ColorId == id);
             if (color == null)
             {
@@ -139,20 +139,20 @@ namespace Web.Controllers
             return View(color);
         }
 
-        // POST: Color/Delete/5
+        // POST: Colors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(short id)
         {
-            var color = await _context.Color.SingleOrDefaultAsync(m => m.ColorId == id);
-            _context.Color.Remove(color);
+            var color = await _context.Colors.SingleOrDefaultAsync(m => m.ColorId == id);
+            _context.Colors.Remove(color);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ColorExists(short id)
         {
-            return _context.Color.Any(e => e.ColorId == id);
+            return _context.Colors.Any(e => e.ColorId == id);
         }
     }
 }
