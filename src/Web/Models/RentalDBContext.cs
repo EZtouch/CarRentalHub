@@ -129,7 +129,7 @@ namespace Web.Models
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(20);
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Make>(entity =>
