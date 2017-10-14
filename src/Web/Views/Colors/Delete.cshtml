@@ -1,0 +1,33 @@
+﻿@model Web.Models.Color
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Color</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-lg-3">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-lg-3">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-lg-3">
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+        <dd class="col-lg-3">
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+</dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ColorId" />
+        <input type="submit" value="Delete" class="btn btn-secondary" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
