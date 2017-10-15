@@ -99,11 +99,11 @@ namespace Web.Models
                     .ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Description)
-                    .HasMaxLength(50);
+                    .HasMaxLength(255);
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(255);
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Color>(entity =>
