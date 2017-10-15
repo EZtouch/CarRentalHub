@@ -156,7 +156,7 @@ namespace Web.Models
 
                 entity.Property(e => e.Name)
                     .IsRequired()
-                    .HasMaxLength(20);
+                    .HasMaxLength(50);
 
                 entity.HasOne(d => d.Class)
                     .WithMany(p => p.Model)

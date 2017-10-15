@@ -101,7 +101,7 @@ CREATE TABLE [Model] (
 	[ModelId] smallint identity(1,1)  NOT NULL,
 	[MakeId] smallint NOT NULL,
 	[ClassId] tinyint NOT NULL,
-	[Name] nvarchar(20) NOT NULL,
+	[Name] nvarchar(50) NOT NULL,
 	[TransmissionId] tinyint NOT NULL
 );
 

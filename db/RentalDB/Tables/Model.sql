@@ -2,7 +2,7 @@
     [ModelId]        SMALLINT      IDENTITY (1, 1) NOT NULL,
     [MakeId]         SMALLINT      NOT NULL,
     [ClassId]        TINYINT       NOT NULL,
-    [Name]           NVARCHAR (20) NOT NULL,
+    [Name]           NVARCHAR (50) NOT NULL,
     [TransmissionId] TINYINT       NOT NULL,
     CONSTRAINT [PK_Model] PRIMARY KEY CLUSTERED ([ModelId] ASC),
     CONSTRAINT [FK_Model_Class] FOREIGN KEY ([ClassId]) REFERENCES [dbo].[Class] ([ClassId]),
