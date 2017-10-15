@@ -82,8 +82,8 @@ CREATE TABLE [Car] (
 
 CREATE TABLE [Class] ( 
 	[ClassId] tinyint identity(1,1)  NOT NULL,
-	[Name] nvarchar(255) NOT NULL,
-	[Description] nvarchar(50)
+	[Name] nvarchar(50) NOT NULL,
+	[Description] nvarchar(255)
 );
 
 CREATE TABLE [Color] ( 
