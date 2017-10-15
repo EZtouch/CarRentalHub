@@ -1,104 +1,104 @@
-INSERT INTO [Make] ([Name]) VALUES (N'Acura')
-INSERT INTO [Make] ([Name]) VALUES (N'Alfa Romeo')
-INSERT INTO [Make] ([Name]) VALUES (N'AM General')
-INSERT INTO [Make] ([Name]) VALUES (N'American Motors (AMC)')
-INSERT INTO [Make] ([Name]) VALUES (N'Aston Martin')
-INSERT INTO [Make] ([Name]) VALUES (N'Audi')
-INSERT INTO [Make] ([Name]) VALUES (N'Bentley')
-INSERT INTO [Make] ([Name]) VALUES (N'BMW')
-INSERT INTO [Make] ([Name]) VALUES (N'Buick')
-INSERT INTO [Make] ([Name]) VALUES (N'Cadillac')
-INSERT INTO [Make] ([Name]) VALUES (N'Chevrolet')
-INSERT INTO [Make] ([Name]) VALUES (N'Chrysler')
-INSERT INTO [Make] ([Name]) VALUES (N'Daewoo')
-INSERT INTO [Make] ([Name]) VALUES (N'Daihatsu')
-INSERT INTO [Make] ([Name]) VALUES (N'Datsun')
-INSERT INTO [Make] ([Name]) VALUES (N'Dodge')
-INSERT INTO [Make] ([Name]) VALUES (N'Eagle')
-INSERT INTO [Make] ([Name]) VALUES (N'Ferrari')
-INSERT INTO [Make] ([Name]) VALUES (N'FIAT')
-INSERT INTO [Make] ([Name]) VALUES (N'Fisker')
-INSERT INTO [Make] ([Name]) VALUES (N'Ford')
-INSERT INTO [Make] ([Name]) VALUES (N'Genesis')
-INSERT INTO [Make] ([Name]) VALUES (N'Geo')
-INSERT INTO [Make] ([Name]) VALUES (N'GMC')
-INSERT INTO [Make] ([Name]) VALUES (N'Honda')
-INSERT INTO [Make] ([Name]) VALUES (N'HUMMER')
-INSERT INTO [Make] ([Name]) VALUES (N'Hyundai')
-INSERT INTO [Make] ([Name]) VALUES (N'INFINITI')
-INSERT INTO [Make] ([Name]) VALUES (N'Isuzu')
-INSERT INTO [Make] ([Name]) VALUES (N'Jaguar')
-INSERT INTO [Make] ([Name]) VALUES (N'Jeep')
-INSERT INTO [Make] ([Name]) VALUES (N'Kia')
-INSERT INTO [Make] ([Name]) VALUES (N'Lamborghini')
-INSERT INTO [Make] ([Name]) VALUES (N'Land Rover')
-INSERT INTO [Make] ([Name]) VALUES (N'Lexus')
-INSERT INTO [Make] ([Name]) VALUES (N'Lincoln')
-INSERT INTO [Make] ([Name]) VALUES (N'Lotus')
-INSERT INTO [Make] ([Name]) VALUES (N'Maserati')
-INSERT INTO [Make] ([Name]) VALUES (N'Maybach')
-INSERT INTO [Make] ([Name]) VALUES (N'Mazda')
-INSERT INTO [Make] ([Name]) VALUES (N'McLaren')
-INSERT INTO [Make] ([Name]) VALUES (N'Mercedes-Benz')
-INSERT INTO [Make] ([Name]) VALUES (N'Mercury')
-INSERT INTO [Make] ([Name]) VALUES (N'Merkur')
-INSERT INTO [Make] ([Name]) VALUES (N'MINI')
-INSERT INTO [Make] ([Name]) VALUES (N'Mitsubishi')
-INSERT INTO [Make] ([Name]) VALUES (N'Nissan')
-INSERT INTO [Make] ([Name]) VALUES (N'Oldsmobile')
-INSERT INTO [Make] ([Name]) VALUES (N'Panoz')
-INSERT INTO [Make] ([Name]) VALUES (N'Peugeot')
-INSERT INTO [Make] ([Name]) VALUES (N'Plymouth')
-INSERT INTO [Make] ([Name]) VALUES (N'Pontiac')
-INSERT INTO [Make] ([Name]) VALUES (N'Porsche')
-INSERT INTO [Make] ([Name]) VALUES (N'Ram')
-INSERT INTO [Make] ([Name]) VALUES (N'Renault')
-INSERT INTO [Make] ([Name]) VALUES (N'Rolls-Royce')
-INSERT INTO [Make] ([Name]) VALUES (N'Saab')
-INSERT INTO [Make] ([Name]) VALUES (N'Saturn')
-INSERT INTO [Make] ([Name]) VALUES (N'Scion')
-INSERT INTO [Make] ([Name]) VALUES (N'smart')
-INSERT INTO [Make] ([Name]) VALUES (N'Sterling')
-INSERT INTO [Make] ([Name]) VALUES (N'Subaru')
-INSERT INTO [Make] ([Name]) VALUES (N'Suzuki')
-INSERT INTO [Make] ([Name]) VALUES (N'Tesla')
-INSERT INTO [Make] ([Name]) VALUES (N'Toyota')
-INSERT INTO [Make] ([Name]) VALUES (N'Volkswagen')
-INSERT INTO [Make] ([Name]) VALUES (N'Volvo')
-INSERT INTO [Make] ([Name]) VALUES (N'Yugo')
+INSERT INTO [Make] ([Name]) VALUES (N'Acura');
+INSERT INTO [Make] ([Name]) VALUES (N'Alfa Romeo');
+INSERT INTO [Make] ([Name]) VALUES (N'AM General');
+INSERT INTO [Make] ([Name]) VALUES (N'American Motors (AMC)');
+INSERT INTO [Make] ([Name]) VALUES (N'Aston Martin');
+INSERT INTO [Make] ([Name]) VALUES (N'Audi');
+INSERT INTO [Make] ([Name]) VALUES (N'Bentley');
+INSERT INTO [Make] ([Name]) VALUES (N'BMW');
+INSERT INTO [Make] ([Name]) VALUES (N'Buick');
+INSERT INTO [Make] ([Name]) VALUES (N'Cadillac');
+INSERT INTO [Make] ([Name]) VALUES (N'Chevrolet');
+INSERT INTO [Make] ([Name]) VALUES (N'Chrysler');
+INSERT INTO [Make] ([Name]) VALUES (N'Daewoo');
+INSERT INTO [Make] ([Name]) VALUES (N'Daihatsu');
+INSERT INTO [Make] ([Name]) VALUES (N'Datsun');
+INSERT INTO [Make] ([Name]) VALUES (N'Dodge');
+INSERT INTO [Make] ([Name]) VALUES (N'Eagle');
+INSERT INTO [Make] ([Name]) VALUES (N'Ferrari');
+INSERT INTO [Make] ([Name]) VALUES (N'FIAT');
+INSERT INTO [Make] ([Name]) VALUES (N'Fisker');
+INSERT INTO [Make] ([Name]) VALUES (N'Ford');
+INSERT INTO [Make] ([Name]) VALUES (N'Genesis');
+INSERT INTO [Make] ([Name]) VALUES (N'Geo');
+INSERT INTO [Make] ([Name]) VALUES (N'GMC');
+INSERT INTO [Make] ([Name]) VALUES (N'Honda');
+INSERT INTO [Make] ([Name]) VALUES (N'HUMMER');
+INSERT INTO [Make] ([Name]) VALUES (N'Hyundai');
+INSERT INTO [Make] ([Name]) VALUES (N'INFINITI');
+INSERT INTO [Make] ([Name]) VALUES (N'Isuzu');
+INSERT INTO [Make] ([Name]) VALUES (N'Jaguar');
+INSERT INTO [Make] ([Name]) VALUES (N'Jeep');
+INSERT INTO [Make] ([Name]) VALUES (N'Kia');
+INSERT INTO [Make] ([Name]) VALUES (N'Lamborghini');
+INSERT INTO [Make] ([Name]) VALUES (N'Land Rover');
+INSERT INTO [Make] ([Name]) VALUES (N'Lexus');
+INSERT INTO [Make] ([Name]) VALUES (N'Lincoln');
+INSERT INTO [Make] ([Name]) VALUES (N'Lotus');
+INSERT INTO [Make] ([Name]) VALUES (N'Maserati');
+INSERT INTO [Make] ([Name]) VALUES (N'Maybach');
+INSERT INTO [Make] ([Name]) VALUES (N'Mazda');
+INSERT INTO [Make] ([Name]) VALUES (N'McLaren');
+INSERT INTO [Make] ([Name]) VALUES (N'Mercedes-Benz');
+INSERT INTO [Make] ([Name]) VALUES (N'Mercury');
+INSERT INTO [Make] ([Name]) VALUES (N'Merkur');
+INSERT INTO [Make] ([Name]) VALUES (N'MINI');
+INSERT INTO [Make] ([Name]) VALUES (N'Mitsubishi');
+INSERT INTO [Make] ([Name]) VALUES (N'Nissan');
+INSERT INTO [Make] ([Name]) VALUES (N'Oldsmobile');
+INSERT INTO [Make] ([Name]) VALUES (N'Panoz');
+INSERT INTO [Make] ([Name]) VALUES (N'Peugeot');
+INSERT INTO [Make] ([Name]) VALUES (N'Plymouth');
+INSERT INTO [Make] ([Name]) VALUES (N'Pontiac');
+INSERT INTO [Make] ([Name]) VALUES (N'Porsche');
+INSERT INTO [Make] ([Name]) VALUES (N'Ram');
+INSERT INTO [Make] ([Name]) VALUES (N'Renault');
+INSERT INTO [Make] ([Name]) VALUES (N'Rolls-Royce');
+INSERT INTO [Make] ([Name]) VALUES (N'Saab');
+INSERT INTO [Make] ([Name]) VALUES (N'Saturn');
+INSERT INTO [Make] ([Name]) VALUES (N'Scion');
+INSERT INTO [Make] ([Name]) VALUES (N'smart');
+INSERT INTO [Make] ([Name]) VALUES (N'Sterling');
+INSERT INTO [Make] ([Name]) VALUES (N'Subaru');
+INSERT INTO [Make] ([Name]) VALUES (N'Suzuki');
+INSERT INTO [Make] ([Name]) VALUES (N'Tesla');
+INSERT INTO [Make] ([Name]) VALUES (N'Toyota');
+INSERT INTO [Make] ([Name]) VALUES (N'Volkswagen');
+INSERT INTO [Make] ([Name]) VALUES (N'Volvo');
+INSERT INTO [Make] ([Name]) VALUES (N'Yugo');
 
 
-INSERT INTO [Class] ([Name], [Description]) VALUES (N'SUV', N'Sports Utility Vehicle generally has a 4 wheel drive, meaning engine power flows to all wheels. SUVs stand tall with high ground clearance, making it suitable for all kinds of terrain. It maybe a 5-7 seater depending on the length of the vehicle.')
-INSERT INTO [Class] ([Name], [Description]) VALUES (N'MPV', N'Multi Purpose Vehicle. As the name suggests, they mostly accommodate 7–8 people. They stand tall with good ground clearance but need not necessarily be as tall as an SUV.')
-INSERT INTO [Class] ([Name], [Description]) VALUES (N'Hatchback', N'do not have a stretched boot. Usually less than 4 metres in length, these vehicles are the most common in developing countries. They are much smaller in height compared to the SUVs. They are mostly used to carry 4–5 people.')
-INSERT INTO [Class] ([Name], [Description]) VALUES (N'Sedan', N'Sedans are extended forms of hatchback cars. They have a rear boot that projects out of the body. They are longer than 4 metres and carry 4–5 people. ')
-INSERT INTO [Class] ([Name], [Description]) VALUES (N'Luxury', N'Mostly known for their luxury features inside the vehicle. They have features such as heated seats, leather seats, ample leg room, brilliant suspension for smooth ride, top quality music system, and many more.')
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'SUV', N'Sports Utility Vehicle generally has a 4 wheel drive, meaning engine power flows to all wheels. SUVs stand tall with high ground clearance, making it suitable for all kinds of terrain. It maybe a 5-7 seater depending on the length of the vehicle.');
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'MPV', N'Multi Purpose Vehicle. As the name suggests, they mostly accommodate 7–8 people. They stand tall with good ground clearance but need not necessarily be as tall as an SUV.');
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Hatchback', N'do not have a stretched boot. Usually less than 4 metres in length, these vehicles are the most common in developing countries. They are much smaller in height compared to the SUVs. They are mostly used to carry 4–5 people.');
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Sedan', N'Sedans are extended forms of hatchback cars. They have a rear boot that projects out of the body. They are longer than 4 metres and carry 4–5 people. ');
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Luxury', N'Mostly known for their luxury features inside the vehicle. They have features such as heated seats, leather seats, ample leg room, brilliant suspension for smooth ride, top quality music system, and many more.');
 
 
-INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Manual (MT)', N'Requires manual gear selection by the driver.')
-INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Automatic (AT)', N'Automatically controls the clutching and transmission.')
-INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Continuously Variable (CVT)', N'An automatic transmission style favored by manufacturers for its lower production cost, ability to achieve better fuel economy and its seamless or uninterrupted transmission of torque between the engine and driving wheels.')
+INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Manual (MT)', N'Requires manual gear selection by the driver.');
+INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Automatic (AT)', N'Automatically controls the clutching and transmission.');
+INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Continuously Variable (CVT)', N'An automatic transmission style favored by manufacturers for its lower production cost, ability to achieve better fuel economy and its seamless or uninterrupted transmission of torque between the engine and driving wheels.');
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Dual-Clutch (DCT)
-', N'A manual transmission that changes gears for you, only much faster, with the benefit of being an almost uninterrupted transmission of torque between the engine and the driving wheels. DCTs allow shifting manually or automatically as required.')
-INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Single-Clutch (SCT)', N'A manual transmission that shifts gears on your behalf. The transmission’s ratios are arranged sequentially and may only be shifted in numerical order.')
+', N'A manual transmission that changes gears for you, only much faster, with the benefit of being an almost uninterrupted transmission of torque between the engine and the driving wheels. DCTs allow shifting manually or automatically as required.');
+INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Single-Clutch (SCT)', N'A manual transmission that shifts gears on your behalf. The transmission’s ratios are arranged sequentially and may only be shifted in numerical order.');
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Automated Manual (AMT)
-', N'The AMT is like a manual transmission that does away with the clutch and lever. But, like the traditional manual gearbox, takes time to disengage and re-engage the delivery of torque from the engine to the driven wheels while the ratio is changed.')
+', N'The AMT is like a manual transmission that does away with the clutch and lever. But, like the traditional manual gearbox, takes time to disengage and re-engage the delivery of torque from the engine to the driven wheels while the ratio is changed.');
 
 
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Super White II', N'#ffffff')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'White Pearl Crystal Shine', N'#efefef')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Silver Metalic', N'#d7dde0')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Gray Metalic', N'#737b7a')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Black Mica', N'#091f22')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Red Mica Metalic', N'#920c25')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Beige Metalic', N'#ccc9b0')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N' Diamond White', N'#f5f4ef')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Bronze Mica Metalic', N'#bbb38e')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metallic', N'#00448c')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Yanmer Beige', N'#dec29d')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Blue Mica Metalic', N'#b8c7cb')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Grey Mica Metalic', N'#5b5c5d')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Steel Mica', N'#112023')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Red Mica', N'#7c1a2e')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Yellow Mica Metalic', N'#d1cdc5')
-INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metalic', N'#0a2657')
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Super White II', N'#ffffff');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'White Pearl Crystal Shine', N'#efefef');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Silver Metalic', N'#d7dde0');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Gray Metalic', N'#737b7a');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Black Mica', N'#091f22');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Red Mica Metalic', N'#920c25');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Beige Metalic', N'#ccc9b0');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N' Diamond White', N'#f5f4ef');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Bronze Mica Metalic', N'#bbb38e');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metallic', N'#00448c');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Yanmer Beige', N'#dec29d');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Blue Mica Metalic', N'#b8c7cb');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Grey Mica Metalic', N'#5b5c5d');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Steel Mica', N'#112023');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Red Mica', N'#7c1a2e');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Yellow Mica Metalic', N'#d1cdc5');
+INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metalic', N'#0a2657');
