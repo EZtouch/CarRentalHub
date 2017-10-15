@@ -18,7 +18,6 @@ namespace Web.Models
         public string Password { get; set; }
         public string Phone { get; set; }
         public byte RoleId { get; set; }
-        public short NationalityId { get; set; }
 
         public UserRole Role { get; set; }
         public ICollection<Rental> RentalEmployee { get; set; }
