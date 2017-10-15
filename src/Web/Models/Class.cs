@@ -7,13 +7,13 @@ namespace Web.Models
     {
         public Class()
         {
-            Car = new HashSet<Car>();
+            Model = new HashSet<Model>();
         }
 
         public byte ClassId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public ICollection<Car> Car { get; set; }
+        public ICollection<Model> Model { get; set; }
     }
 }

@@ -12,10 +12,11 @@ namespace Web.Models
 
         public short ModelId { get; set; }
         public short MakeId { get; set; }
-        public byte ModelTypeId { get; set; }
+        public byte ClassId { get; set; }
         public string Name { get; set; }
         public byte TransmissionId { get; set; }
 
+        public Class Class { get; set; }
         public Make Make { get; set; }
         public Transmission Transmission { get; set; }
         public ICollection<Car> Car { get; set; }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -72,12 +71,6 @@ namespace Web.Models
                     .HasForeignKey(d => d.AvailabilityId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Car_Availability");
-
-                entity.HasOne(d => d.Class)
-                    .WithMany(p => p.Car)
-                    .HasForeignKey(d => d.ClassId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Car_Class");
 
                 entity.HasOne(d => d.Color)
                     .WithMany(p => p.Car)
@@ -164,6 +157,12 @@ namespace Web.Models
                 entity.Property(e => e.Name)
                     .IsRequired()
                     .HasMaxLength(20);
+
+                entity.HasOne(d => d.Class)
+                    .WithMany(p => p.Model)
+                    .HasForeignKey(d => d.ClassId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Model_Class");
 
                 entity.HasOne(d => d.Make)
                     .WithMany(p => p.Model)

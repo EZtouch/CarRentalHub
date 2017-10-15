@@ -2,14 +2,14 @@
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Car_Availability]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
 ALTER TABLE [Car] DROP CONSTRAINT [FK_Car_Availability];
 
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Car_Class]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
-ALTER TABLE [Car] DROP CONSTRAINT [FK_Car_Class];
-
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Car_Color]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
 ALTER TABLE [Car] DROP CONSTRAINT [FK_Car_Color];
 
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Car_Model]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
 ALTER TABLE [Car] DROP CONSTRAINT [FK_Car_Model];
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Model_Class]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
+ALTER TABLE [Model] DROP CONSTRAINT [FK_Model_Class];
 
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('[FK_Model_Make]') AND OBJECTPROPERTY(id, 'IsForeignKey') = 1)
 ALTER TABLE [Model] DROP CONSTRAINT [FK_Model_Make];
@@ -74,7 +74,6 @@ CREATE TABLE [Car] (
 	[AvailabilityId] tinyint NOT NULL,
 	[ModelId] smallint NOT NULL,
 	[ColorId] smallint NOT NULL,
-	[ClassId] tinyint NOT NULL,
 	[Mileage] float,
 	[RegPlateNo] nvarchar(12) NOT NULL,
 	[YearManufactured] date NOT NULL,
@@ -101,7 +100,7 @@ CREATE TABLE [Make] (
 CREATE TABLE [Model] ( 
 	[ModelId] smallint identity(1,1)  NOT NULL,
 	[MakeId] smallint NOT NULL,
-	[ModelTypeId] tinyint NOT NULL,
+	[ClassId] tinyint NOT NULL,
 	[Name] nvarchar(20) NOT NULL,
 	[TransmissionId] tinyint NOT NULL
 );
@@ -240,14 +239,14 @@ ALTER TABLE [UserRole] ADD CONSTRAINT [PK_UserRole]
 ALTER TABLE [Car] ADD CONSTRAINT [FK_Car_Availability] 
 	FOREIGN KEY ([AvailabilityId]) REFERENCES [Availability] ([AvailabilityId]);
 
-ALTER TABLE [Car] ADD CONSTRAINT [FK_Car_Class] 
-	FOREIGN KEY ([ClassId]) REFERENCES [Class] ([ClassId]);
-
 ALTER TABLE [Car] ADD CONSTRAINT [FK_Car_Color] 
 	FOREIGN KEY ([ColorId]) REFERENCES [Color] ([ColorId]);
 
 ALTER TABLE [Car] ADD CONSTRAINT [FK_Car_Model] 
 	FOREIGN KEY ([ModelId]) REFERENCES [Model] ([ModelId]);
+
+ALTER TABLE [Model] ADD CONSTRAINT [FK_Model_Class] 
+	FOREIGN KEY ([ClassId]) REFERENCES [Class] ([ClassId]);
 
 ALTER TABLE [Model] ADD CONSTRAINT [FK_Model_Make] 
 	FOREIGN KEY ([MakeId]) REFERENCES [Make] ([MakeId]);
