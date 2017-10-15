@@ -228,3 +228,8 @@ INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Steel Mica', N'#112023');
 INSERT INTO [Color] ([Name], [Code]) VALUES (N'Red Mica', N'#7c1a2e');
 INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Yellow Mica Metalic', N'#d1cdc5');
 INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metalic', N'#0a2657');
+
+
+INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Employee', N'An employee.');
+INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Customer', N'A customer.');
+INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Administrator', N'A sys admin.');
