@@ -68,6 +68,12 @@ INSERT INTO [Make] ([Name]) VALUES (N'Volvo')
 INSERT INTO [Make] ([Name]) VALUES (N'Yugo')
 
 
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'SUV', N'Sports Utility Vehicle generally has a 4 wheel drive, meaning engine power flows to all wheels. SUVs stand tall with high ground clearance, making it suitable for all kinds of terrain. It maybe a 5-7 seater depending on the length of the vehicle.')
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'MPV', N'Multi Purpose Vehicle. As the name suggests, they mostly accommodate 7–8 people. They stand tall with good ground clearance but need not necessarily be as tall as an SUV.')
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Hatchback', N'do not have a stretched boot. Usually less than 4 metres in length, these vehicles are the most common in developing countries. They are much smaller in height compared to the SUVs. They are mostly used to carry 4–5 people.')
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Sedan', N'Sedans are extended forms of hatchback cars. They have a rear boot that projects out of the body. They are longer than 4 metres and carry 4–5 people. ')
+INSERT INTO [Class] ([Name], [Description]) VALUES (N'Luxury', N'Mostly known for their luxury features inside the vehicle. They have features such as heated seats, leather seats, ample leg room, brilliant suspension for smooth ride, top quality music system, and many more.')
+
 
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Manual (MT)', N'Requires manual gear selection by the driver.')
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Automatic (AT)', N'Automatically controls the clutching and transmission.')
@@ -77,7 +83,6 @@ INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Dual-Clutch (DCT)
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Single-Clutch (SCT)', N'A manual transmission that shifts gears on your behalf. The transmission’s ratios are arranged sequentially and may only be shifted in numerical order.')
 INSERT INTO [Transmission] ([Type], [Description]) VALUES (N'Automated Manual (AMT)
 ', N'The AMT is like a manual transmission that does away with the clutch and lever. But, like the traditional manual gearbox, takes time to disengage and re-engage the delivery of torque from the engine to the driven wheels while the ratio is changed.')
-
 
 
 INSERT INTO [Color] ([Name], [Code]) VALUES (N'Super White II', N'#ffffff')
