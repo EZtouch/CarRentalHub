@@ -230,6 +230,11 @@ INSERT INTO [Color] ([Name], [Code]) VALUES (N'Light Yellow Mica Metalic', N'#d1
 INSERT INTO [Color] ([Name], [Code]) VALUES (N'Dark Blue Mica Metalic', N'#0a2657');
 
 
+INSERT INTO [Availability] ([Description]) VALUES (N'Available')
+INSERT INTO [Availability] ([Description]) VALUES (N'Rented')
+INSERT INTO [Availability] ([Description]) VALUES (N'Under Maintenance')
+
+
 INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Employee', N'An employee.');
 INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Customer', N'A customer.');
 INSERT INTO [UserRole] ([Name], [Description]) VALUES (N'Administrator', N'A sys admin.');
