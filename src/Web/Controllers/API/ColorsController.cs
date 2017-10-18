@@ -60,8 +60,8 @@ namespace Web.Controllers.API
                 return BadRequest();
             }
 
-//            _context.Entry(color).State = EntityState.Modified;
-            _context.Colors.Update(color);
+            _context.Entry(color).State = EntityState.Modified;
+
             try
             {
                 await _context.SaveChangesAsync();
