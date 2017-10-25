@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Web.Models.ManageViewModels
+namespace EZtouch.CarRentalHub.ViewModels.Manage
 {
     public class IndexViewModel
     {

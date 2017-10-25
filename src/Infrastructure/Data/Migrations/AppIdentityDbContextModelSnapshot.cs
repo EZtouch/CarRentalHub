@@ -1,10 +1,10 @@
 ﻿using System;
-using Infrastructure.Identity;
+using EZtouch.CarRentalHub.Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Web.Data.Migrations
+namespace EZtouch.CarRentalHub.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
     partial class AppIdentityDbContextModelSnapshot : ModelSnapshot

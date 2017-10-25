@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Web.Models.AccountViewModels
+namespace EZtouch.CarRentalHub.ViewModels.Account
 {
     public class ExternalLoginViewModel
     {

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Infrastructure.Identity;
+using EZtouch.CarRentalHub.Infrastructure.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 
-namespace Web.Data.Migrations
+namespace EZtouch.CarRentalHub.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(AppIdentityDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]

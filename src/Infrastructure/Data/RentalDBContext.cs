@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using EZtouch.CarRentalHub.ApplicationCore.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Web.Models
+namespace EZtouch.CarRentalHub.Infrastructure.Data
 {
     public partial class RentalDBContext : DbContext
     {
@@ -13,7 +13,7 @@ namespace Web.Models
         public virtual DbSet<Class> Classes { get; set; }
         public virtual DbSet<Color> Colors { get; set; }
         public virtual DbSet<Make> Makes { get; set; }
-        public virtual DbSet<Model> Models { get; set; }
+        public virtual DbSet<ApplicationCore.Entities.Model> Models { get; set; }
         public virtual DbSet<Rental> Rentals { get; set; }
         public virtual DbSet<Transmission> Transmissions { get; set; }
         public virtual DbSet<User> Users { get; set; }
@@ -144,7 +144,7 @@ namespace Web.Models
                     .HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Model>(entity =>
+            modelBuilder.Entity<ApplicationCore.Entities.Model>(entity =>
             {
                 entity.HasIndex(e => e.ModelId)
                     .HasName("UQ_Model_ModelId")

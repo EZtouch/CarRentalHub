@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Web.Models;
+using EZtouch.CarRentalHub.ApplicationCore.Entities;
+using EZtouch.CarRentalHub.Infrastructure.Data;
 
-namespace Web.Controllers
+namespace EZtouch.CarRentalHub.Controllers
 {
     public class ColorsController : Controller
     {

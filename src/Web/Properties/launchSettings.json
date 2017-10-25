@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Web": {
+    "CarRentalHub": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

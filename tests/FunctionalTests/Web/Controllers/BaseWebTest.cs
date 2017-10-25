@@ -3,7 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Reflection;
 using Microsoft.Extensions.PlatformAbstractions;
-using Web;
+using EZtouch.CarRentalHub;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 
@@ -25,12 +25,12 @@ namespace FunctionalTests.Web.Controllers
             _contentRoot = GetProjectPath("src", startupAssembly);
             var builder = new WebHostBuilder()
                 .UseContentRoot(_contentRoot)
+                .UseEnvironment("Testing")
                 .UseStartup<Startup>();
 
             var server = new TestServer(builder);
-            var client = server.CreateClient();
 
-            return client;
+            return server.CreateClient();
         }
 
         /// <summary>

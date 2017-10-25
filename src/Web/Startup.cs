@@ -4,12 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Web.Data;
-using Web.Models;
-using Web.Services;
-using Infrastructure.Identity;
+using EZtouch.CarRentalHub.Infrastructure.Data;
+using EZtouch.CarRentalHub.Services;
+using EZtouch.CarRentalHub.Infrastructure.Identity;
 
-namespace Web
+namespace EZtouch.CarRentalHub
 {
     public class Startup
     {

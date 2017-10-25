@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Web.Models;
+using EZtouch.CarRentalHub.ApplicationCore.Entities;
+using EZtouch.CarRentalHub.Infrastructure.Data;
 
-namespace Web.Controllers.API
+namespace EZtouch.CarRentalHub.Controllers.API
 {
     [Produces("application/json")]
     [Route("api/Colors")]

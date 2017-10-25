@@ -1,4 +1,4 @@
-﻿namespace Web.Models.ManageViewModels
+﻿namespace EZtouch.CarRentalHub.ViewModels.Manage
 {
     public class GenerateRecoveryCodesViewModel
     {

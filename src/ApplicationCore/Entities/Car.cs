@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Web.Models
+namespace EZtouch.CarRentalHub.ApplicationCore.Entities
 {
     public partial class Car
     {

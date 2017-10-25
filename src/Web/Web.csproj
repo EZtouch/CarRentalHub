@@ -16,8 +16,6 @@
   </Target>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 

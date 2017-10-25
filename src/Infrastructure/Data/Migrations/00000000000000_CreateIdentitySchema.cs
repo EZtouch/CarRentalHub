@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Web.Data.Migrations
+namespace EZtouch.CarRentalHub.Infrastructure.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

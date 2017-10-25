@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Identity
+namespace EZtouch.CarRentalHub.Infrastructure.Identity
 {
     public class AppIdentityDbContext : IdentityDbContext<ApplicationUser>
     {

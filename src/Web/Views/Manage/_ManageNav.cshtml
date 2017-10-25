@@ -1,4 +1,4 @@
-﻿@using Infrastructure.Identity
+﻿@using EZtouch.CarRentalHub.Infrastructure.Identity
 @inject Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Web.Models
+namespace EZtouch.CarRentalHub.ApplicationCore.Entities
 {
-    public partial class Transmission
+    public partial class Class
     {
-        public Transmission()
+        public Class()
         {
             Model = new HashSet<Model>();
         }
 
-        public byte TransmissionId { get; set; }
-        public string Type { get; set; }
+        public byte ClassId { get; set; }
+        public string Name { get; set; }
         public string Description { get; set; }
 
         public ICollection<Model> Model { get; set; }

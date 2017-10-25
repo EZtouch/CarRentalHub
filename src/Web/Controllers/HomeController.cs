@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Web.Models;
+using EZtouch.CarRentalHub.ViewModels;
 
-namespace Web.Controllers
+namespace EZtouch.CarRentalHub.Controllers
 {
     public class HomeController : Controller
     {
