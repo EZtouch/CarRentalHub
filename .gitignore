@@ -489,3 +489,8 @@ BenchmarkDotNet.Artifacts/
 
 # OpenCover UI analysis results
 OpenCover/
+
+# Ignore minified files, map files, and the app js file, since we're working with Typescript
+/**/*.min*
+/**/*.map
+src/Web/wwwroot/scripts/app.js
