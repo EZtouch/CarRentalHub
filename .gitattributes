@@ -61,3 +61,10 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Ignore generated & minified files in diff and language statsics
+###############################################################################
+/**/*.min* linguist-generated=true
+/**/*.map linguist-generated=true
+src/Web/wwwroot/scripts/app.js linguist-generated=true
