@@ -14,7 +14,9 @@
 
   <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
     <Message Text="Restoring yarn packages" Importance="High" />
-    <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
+    <Exec Command="yarn install --modules-folder .\wwwroot\lib" />
+    <Message Text="Checking for and applying yarn packages updates" Importance="High" />
+    <Exec Command="yarn upgrade jquery jquery-validation jquery-validation-unobtrusive popper.js @types/jquery --latest bootstrap@next --exact --modules-folder .\wwwroot\lib" />
   </Target>
 
   <ItemGroup>
@@ -38,7 +40,9 @@
 
   <Target Name="RestoreYarnPackages" BeforeTargets="Restore;CollectPackageReferences">
     <Message Text="Restoring yarn packages" Importance="High" />
-    <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
+    <Exec Command="yarn install --modules-folder .\wwwroot\lib" />
+    <Message Text="Checking for and applying yarn packages updates" Importance="High" />
+    <Exec Command="yarn upgrade jquery jquery-validation jquery-validation-unobtrusive popper.js @types/jquery --latest bootstrap@next --exact --modules-folder .\wwwroot\lib" />
   </Target>
   
 </Project>
