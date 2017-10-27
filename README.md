@@ -10,4 +10,9 @@ Built using bleeding edge technologies:
 ⋅⋅* Bootstrap 4
 
 
-Getting 404 file not found errors? Right-click on the web project in Visual Studio, and click manage bower packages, which should force it to restore bower packages.
+Build Requirements:
+Yarn: https://yarnpkg.com
+Visual Studio version 15.4 or newer OR manually installing the .net core SDK 2.0
+
+
+Note: Made the switch to Yarn, as Bower has been deprecated for some time now. It has also been setup to automatically install and update packages on restore.
