@@ -12,35 +12,44 @@
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Code)
-                </th>
-                <th>
+            <th>
+                <label>Delete</label>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Code)
+            </th>
+            <th>
                 
-                </th>
+            </th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Code)
-                <svg height="25" width="25">
-                    <circle cx="12.5" cy="12.5" r="10" stroke="black" stroke-width="1" fill="@Html.DisplayFor(modelItem => item.Code)" />
-                </svg>
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ColorId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ColorId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ColorId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    <input type="checkbox" data-id="@item.ColorId" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                    <svg height="25" width="25">
+                        <circle cx="12.5" cy="12.5" r="10" stroke="black" stroke-width="1" fill="@Html.DisplayFor(modelItem => item.Code)"/>
+                    </svg>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ColorId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ColorId">Details</a> |
+                    @*<a asp-action="Delete" asp-route-id="@item.ColorId">Delete</a>*@
+                    <button class="delete-btn btn btn-link" data-id="@item.ColorId">Delete</button>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+<button id="delete-all">Delete Selected</button>
