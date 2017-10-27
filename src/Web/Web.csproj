@@ -36,7 +36,7 @@
     <None Include="wwwroot\scripts\app.min.js" />
   </ItemGroup>
 
-  <Target Name="PreBuild" AfterTargets="PreBuildEvent">
+  <Target Name="RestoreYarnPackages" BeforeTargets="Restore;CollectPackageReferences">
     <Message Text="Restoring yarn packages" Importance="High" />
     <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
   </Target>
