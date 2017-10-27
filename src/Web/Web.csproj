@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
-    <Exec Command="bower install --allow-root" />
-    <Exec Command="dotnet bundle" Condition="'$(ASPNETCORE_ENVIRONMENT)'!='Development'" />
+    <Message Text="Restoring yarn packages" Importance="High" />
+    <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
   </Target>
 
   <ItemGroup>
@@ -32,4 +32,9 @@
     <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.6.362" />
   </ItemGroup>
 
+  <Target Name="PreBuild" AfterTargets="PreBuildEvent">
+    <Message Text="Restoring yarn packages" Importance="High" />
+    <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
+  </Target>
+  
 </Project>
