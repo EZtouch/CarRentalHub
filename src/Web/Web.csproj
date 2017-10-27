@@ -32,6 +32,10 @@
     <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.6.362" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\scripts\app.min.js" />
+  </ItemGroup>
+
   <Target Name="PreBuild" AfterTargets="PreBuildEvent">
     <Message Text="Restoring yarn packages" Importance="High" />
     <Exec Command="yarn install --modules-folder .\wwwroot\lib\" />
